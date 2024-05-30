@@ -14,6 +14,9 @@
             "email": "tgrwrwn31@gmail.com"
         }
     ],
+    "scripts": {
+        "lint": "php -l your_file.php"
+    },    
     "minimum-stability": "stable",
     "require": {}
 }
