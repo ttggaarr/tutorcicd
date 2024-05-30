@@ -15,7 +15,7 @@
         }
     ],
     "scripts": {
-        "lint": "php -l your_file.php"
+        "lint": "php -l koneksi.php"
     },    
     "minimum-stability": "stable",
     "require": {}
