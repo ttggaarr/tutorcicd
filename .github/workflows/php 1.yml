@@ -1,0 +1,34 @@
+name: PHP CI/CD
+
+on:
+  push:
+    branches:
+      - master  # Ganti dengan nama branch yang digunakan
+  pull_request:
+    branches:
+      - master  # Ganti dengan nama branch yang digunakan
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate --strict
+
+    - name: Install dependencies
+      run: composer install --no-interaction --no-progress
+
+    - name: PHP Lint
+      run: composer lint
+
+    - name: PHPUnit tests
+      run: composer test
+
+    - name: Your Deployment Step
+      run: |
+        # Your deployment script or command here
+        echo "Deploying..."
+
