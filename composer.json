@@ -1,11 +1,11 @@
 {
-    "name": "myvendor/myproject",
-    "description": "ok",
+    "name": "lenovo/login",
+    "description": "A simple login system",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Myvendor\\Myproject\\": "src/"
+            "Lenovo\\Login\\": "src/"
         }
     },
     "authors": [
