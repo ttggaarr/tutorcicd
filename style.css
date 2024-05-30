@@ -1,0 +1,100 @@
+body {
+        background-image: url('banner-bg.jpg'); /* Pastikan path sesuai */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+    }
+    
+    .kotak {
+        width: 350px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px 20px;
+        box-shadow: 0px 0px 10px 0px #000;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .tab {
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: #333;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+    
+    .tab button.active {
+        background-color: #ccc;
+    }
+    
+    .form-container {
+        display: none;
+    }
+    
+    .tulisan_login, .tulisan_register {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+    .form_login, .form_register {
+        width: calc(100% - 20px);
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-left: 10px;
+    }
+    
+    .tombol_login, .tombol_register {
+        background: #e74c3c;
+        color: white;
+        font-size: 16px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .tombol_login:hover, .tombol_register:hover {
+        background: #c0392b;
+    }
+    
+    label {
+        font-size: 16px;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
