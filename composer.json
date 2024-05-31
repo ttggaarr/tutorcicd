@@ -15,8 +15,14 @@
         }
     ],
     "scripts": {
-        "lint": "php -l koneksi.php"
-    },    
+        "lint": "php -l koneksi.php",
+        "test": "phpunit"
+    },
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5"
+    }
 }
